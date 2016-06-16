@@ -1,0 +1,285 @@
+/*
+Bootstrap breakpointy: 768, 992, 1200
+xs: (max-width: 767px)
+sm: (min-width: 768px) and (max-width: 991px)
+md: (min-width: 992px) and (max-width: 1199px)
+lg: (min-width: 1200px)
+
+Barvy
+ruzova: #c5308a
+cervena: #ff0000
+tmave zelena: #228b22
+jedove zelena: #00ff00
+seda: #f0f0f0
+koralova: #ff7f50
+tmave cervena: #8b0000;
+bila: #fffafa
+*/
+
+/**** Google Fonts ****/
+@import url(https://fonts.googleapis.com/css?family=Lora:400italic,400,700italic,700&subset=latin,latin-ext);
+
+
+/* nastaveni fontu pro cely dokument, vychozi velikosti pisma */
+body {
+    position: relative;
+    /*padding-top: 50px;*/
+    font-family: Verdana, serif;
+    font-size: 12px;
+}
+
+/* v breakpointu 'sm' zvetsime pismo */
+@media (min-width: 768px) and (max-width: 991px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+/* v breakpointu 'md' zvetsime pismo jeste vic */
+@media (min-width: 992px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+
+/* vychozi barva odkazu */
+a {
+    color: #228b22;
+}
+
+/**** Full Slider ****/
+
+html,
+body {
+    height: 100%;
+}
+
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+
+/**** Hlavni menu ****/
+.navbar {
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.navbar-inverse {
+    border: 0;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #ff7f50;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: #fffafa;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #ff7f50;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover {
+    color: #fffafa;
+}
+
+/**** Nadpisy ****/
+h2, h3 {
+    font-weight: 400;
+    font-style: italic;
+}
+
+h2 {
+    position: relative;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+h3 {
+    color: #8b0000;
+}
+
+h4 {
+    font: bold;
+    text-align: center;
+}
+
+
+
+/**** Sekce ****/
+.sekce {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.sekce-seda {
+    background-color: #f0f0f0;
+}
+.sekce-hneda {
+    background-color: #eee8aa;
+}
+
+
+
+/**** Novinky ****/
+.akce {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #8b0000;
+    color: #fff;
+    position: absolute;
+    z-index: 15;
+    bottom: 0px;
+    width: 100%;
+    opacity: 0.85;
+}
+
+.akce h2 {
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.akce p {
+    margin-bottom: 0;
+}
+
+
+
+/**** Vybavení ****/
+.vybaveni {
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+.vybaveni img {
+    width: 100%;
+    max-width: 220px;
+    padding: 2px;
+    border: 2px dotted #aaa;
+}
+
+
+
+/**** Sluzby ****/
+#sluzby h3 {
+    margin-top: 0;
+}
+
+.sluzba {
+    margin-bottom: 30px;
+}
+
+.sluzba img {
+    margin-right: 15px;
+    padding: 2px;
+    border: 2px dotted #aaa;
+}
+
+
+
+/**** Rezervace ****/
+.rezervace {
+    background-color: #afeeee;
+    padding-right: 120px;
+    padding-left: 90px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+
+
+
+/**** Fotogalerie ****/
+#fotogalerie {
+    padding-bottom: 0;
+}
+
+.galerie {
+    margin: 0;
+    padding: 0;
+}
+
+.galerie li {
+    margin: 0;
+    padding: 1px;
+    display: block;
+    float: left;
+    /* vychozi stav pro mala zarizeni - 3 obrazky vedle sebe */
+    width: 33.3333%;
+    overflow: hidden;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .galerie li {
+        /* stredni velikost zarizeni - 4 obrazky vedle sebe */
+        width: 25%;
+    }
+}
+@media (min-width: 992px) {
+    /* velka zarizeni - 6 obrazku vedle sebe */
+    .galerie li {
+        width: 16.6666%;
+    }
+}
+
+
+
+.galerie img {
+    width: 100%;
+    height: auto;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    transition: all ease 0.6s;
+}
+
+.galerie img:hover {
+    transform: scale(1.1);
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+
+/**** Kontakt ****/
+#kontakt h3 {
+    margin-top: 0;
+}
+
+.oteviraci-doba td {
+    background-color: #fff;
+}
+
+
+
+/**** Paticka ****/
+.paticka {
+    padding-left: 20px;
+    font-size: 15px;
+}
+.photo-credits {
+    font-size: 12px;
+}

@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="cs">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Chalupa</title>
+	<meta name="description" content="Chalupa k pronajmuti v Jizerskych horach, Hrabetice.">
+
+	<!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- nase vlastni styly -->
+	<link href="css/style.css"  rel="stylesheet">
+</head>
+<body data-spy="scroll" data-target="#menu" data-offset="100">
+	
+	<!-- Hlavicka a Hlavni menu -->
+	<nav class="navbar navbar-inverse navbar-fixed-top"><!--FIXME: navbar-static-top-->
+		<div class="container">
+
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+					<span class="sr-only">Přepnout menu</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">CHALUPA</a>
+		    </div><!-- navbar-header -->
+
+			<div id="menu" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#vybaveni" class="active">Vybavení</a></li>
+					<li><a href="#sluzby">Služby a ceník</a></li>
+					<li><a href="#rezervace">Rezervace</a></li>
+					<li><a href="#fotogalerie">Fotogalerie</a></li>
+					<li><a href="#kontakt">Kontakt</a></li>
+				</ul>
+			</div><!-- menu -->
+
+		</div><!--.container -->
+	</nav><!-- .navbar -->
+
+	<!-- Obrazky -->
+	<div id="promitacka" class="carousel slide" data-ride="carousel" data-interval="5000">
+		<div class="carousel-inner" role="listbox">
+			<div class="item active"><div class="fill" style="background-image:url('../images/carousel/chal1.jpg');"></div></div>
+			<div class="item"><div class="fill" style="background-image:url('../images/carousel/chal2.jpg');"></div></div>
+			<div class="item"><div class="fill" style="background-image:url('../images/carousel/chal3.jpg');"></div></div>
+		</div>
+			<!-- Novinky -->
+			<div class="akce">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6 col-md-4">
+							<h2>Pozor!</h2>
+						</div>
+						<div class="col-sm-6 col-md-8">
+							<p>Na snídani chodí místní kráva. Prosíme, nekrmit (obslouží se sama), nehladit, nesedlat a nejlépe s úctou VYPROVODIT.</p>
+						</div>
+					</div><!-- .row -->
+				</div><!-- .container -->
+			</div><!-- .akce -->
+	</div>
+
+
+
+
+	<!-- Vybavení -->
+	<div id="vybaveni" class="sekce sekce-seda">
+
+		<div class="container">
+
+			<h2>Vybavení</h2>
+
+			<div class="row">
+
+				<div class="col-sm-4">
+					<div class="vybaveni">
+						<img src="images/pictogram/kuchyn.jpg" alt="Kuchyn">
+						<h3>Kuchyně</h3>
+						<p>Elektrický sporák, rychlovarná konvice, mikrovlnná trouba, myčka. Nádobí i náčinní v dostatečném počtu.</p>
+					</div>
+				</div>
+
+				<div class="col-sm-4">
+					<div class="vybaveni">
+						<img src="images/pictogram/koupelna.jpg" alt="Koupelna">
+						<h3>Koupelna</h3>
+						<p>Sprchový kout, umyvadlo, jeden záchod v přízemí.</p>
+					</div>
+				</div>
+
+				<div class="col-sm-4">
+					<div class="vybaveni">
+						<img src="images/pictogram/pokoje.jpg" alt="Pokoje">
+						<h3>Pokoje</h3>
+						<p>1 pokoj v přízemí, 2 pokoje v patře. V každém pokoji 3 plnohodnotná místa. Možnost dětské postýlky. Přistýlka možná 1 v každém pokoji (pokoj v přízemí přízemí rozkládací gauč, v pokojích v patře přistýlka pouze matrace na zemi).</p>
+					</div>
+				</div>
+
+			</div><!-- .row -->
+
+		</div><!-- .container -->
+
+	</div><!-- #vybaveni -->
+
+
+
+	<!-- Další sluzby -->
+	<div id="sluzby" class="sekce sekce-hneda">
+	
+		<div class="container">
+
+			<h2>Služby a ceník</h2>
+
+			<div class="row">
+
+				<div class="col-sm-6 col-md-7">
+
+					<div class="media sluzba">
+						<div class="media-left hidden-xs hidden-sm">
+							<img src="images/pictogram/kroket.jpg" width="100" height="100" alt="Kroket">
+						</div>
+						<div class="media-body">
+							<h3>Hry k půjčení</h3>
+							<p>Možnost půjčení kroketu, venkovního mikada, badmintonu. Dále k dispozici venkovní trampolína, houpačka, skluzavka a pískoviště.</p>
+						</div>
+					</div>
+
+					<div class="media sluzba">
+						<div class="media-left hidden-xs hidden-sm">
+							<img src="images/pictogram/zahrada.jpg" width="100" height="100" alt="Zahrada">
+						</div>
+						<div class="media-body">
+							<h3>Zahrada</h3>
+							<p>Velká udržovaná zahrada. Pozemek není zcela oplocen (pejsci mají prostor k úniku). Pozemek je hned vedle místní komunikace. Možné půjčit venkovní přenosný gril.</p>
+						</div>
+					</div>
+
+					<div class="media sluzba">
+						<div class="media-left hidden-xs hidden-sm">
+							<img src="images/pictogram/kolo.jpg" width="100" height="100" alt="Kolo">
+						</div>
+						<div class="media-body">
+							<h3>Kolo</h3>
+							<p>Prostor k ustájení kol pod střechou a zámkem. Krásné okolí pro cyklisty (elektrokola leckdo ocení).</p>
+						</div>
+					</div>
+
+				</div><!-- .col -->
+
+				<div class="col-sm-6 col-md-5">
+
+					<h3>Ceník</h3>
+					<table class="table table-bordered">
+						<tbody>
+							<tr>
+								<td>objekt na noc</td>
+								<td>1200&ndash;1500&nbsp;Kč</td>
+							</tr>
+							<tr>
+								<td>pes na noc</td>
+								<td>30&ndash;50&nbsp;Kč</td>
+							</tr>
+							<tr>
+								<td>delší pobyt na noc</td>
+								<td>1100&nbsp;Kč</td>
+							</tr>
+							<tr>
+								<td>skupina do 4 osob na noc</td>
+								<td>1100&nbsp;Kč</td>
+							</tr>
+						</tbody>
+					</table>
+
+				</div><!-- col -->
+
+			</div><!-- .row -->
+
+		</div><!-- .container -->
+
+	</div><!-- #sluzby -->
+
+
+
+	<!-- Rezervace -->
+	<div id="rezervace" class="rezervace">
+
+		<div class="container">
+
+		<h2>Rezervace</h2>
+
+			<div class="row">
+
+				<div class="col-sm-6 col-md-8">
+
+					<form>
+						  <fieldset class="form-group">
+						    <label for="exampleInputEmail1">Vaše emailová adresa</label>
+						    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="vložte adresu">
+						    <small class="text-muted">Váš email slouží pouze pro vzájemnou komunikaci. Nikdy nebude poskytnut třetí straně.</small>
+						  </fieldset>
+
+						  <fieldset class="form-group">
+						    <label for="exampleSelect1">Počet osob</label>
+						    <select class="form-control" id="exampleSelect1">
+						      <option>1</option>
+						      <option>2</option>
+						      <option>3</option>
+						      <option>4</option>
+						      <option>5</option>
+						      <option>6</option>
+						      <option>7</option>
+						      <option>8</option>
+						      <option>9</option>
+						      <option>10</option>
+						      <option>11</option>
+						      <option>12</option>
+						    </select>
+						  </fieldset>
+
+						  <fieldset class="form-group">
+						    <label for="exampleTextarea">Vaše zpráva</label>
+						    <textarea class="form-control" id="teloZpravy" rows="3"></textarea>
+						  </fieldset>
+
+						  <button type="submit" class="btn btn-primary" onclick="sendmail()">Odeslat</button>
+					</form>
+				</div><!-- col -->
+
+				<div class="col-sm-6 col-md-4">
+					<h4>Orientační obsazenost</h4>
+
+					<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=300&amp;wkst=2&amp;hl=cs&amp;bgcolor=%23FFFFFF&amp;src=9ciiumq6du58hgs41728gkr728%40group.calendar.google.com&amp;color=%2328754E&amp;ctz=Europe%2FPrague" style="border-width:0" width="400" height="300" frameborder="0" scrolling="no"></iframe>
+				</div><!-- col -->
+
+			</div><!-- .row -->
+
+		</div><!-- .container -->
+
+	</div><!-- #rezervace -->
+
+	<!-- Fotogalerie -->
+	<div id="fotogalerie" class="sekce">
+
+		<h2>Fotogalerie</h2>
+
+		<ul class="galerie clearfix">
+			<li><a href="images/galerieB/fotka1.jpg"><img src="images/galerieS/foto01.jpg" alt="foto 01"></a></li>
+			<li><img src="images/galerieS/foto02.jpg" alt="Foto 02"></li>
+			<li><img src="images/galerieS/foto03.jpg" alt="Foto 03"></li>
+			<li><img src="images/galerieS/foto04.jpg" alt="Foto 04"></li>
+			<li><img src="images/galerieS/foto05.jpg" alt="Foto 05"></li>
+			<li><img src="images/galerieS/foto06.jpg" alt="Foto 06"></li>
+			<li><img src="images/galerieS/foto07.jpg" alt="Foto 07"></li>
+			<li><img src="images/galerieS/foto08.jpg" alt="Foto 08"></li>
+			<li><img src="images/galerieS/foto09.jpg" alt="Foto 09"></li>
+			<li><img src="images/galerieS/foto10.jpg" alt="Foto 10"></li>
+			<li><img src="images/galerieS/foto11.jpg" alt="Foto 11"></li>
+			<li><img src="images/galerieS/foto12.jpg" alt="Foto 12"></li>
+		</ul>
+		
+		
+		
+	</div><!-- #fotogalerie -->
+
+
+
+	<!-- Kontakt -->
+	<div id="kontakt" class="sekce sekce-seda">
+
+		<div class="container">
+
+			<h2>Kontakt</h2>
+
+			<div class="row">
+
+				<div class="col-sm-6 col-md-4">
+
+					<h3>Kdy můžete přijet</h3>
+
+					<table class="table table-bordered oteviraci-doba">
+						<tbody>
+							<tr>
+								<td>Jaro</td>
+								<td>ano</td>
+							</tr>
+							<tr>
+								<td>Léto</td>
+								<td>určitě</td>
+							</tr>
+							<tr>
+								<td>Podzim</td>
+								<td>ano</td>
+							</tr>
+							<tr>
+								<td>Zima</td>
+								<td>dá-li Muhu</td>
+							</tr>
+						</tbody>
+					</table>
+
+				</div><!-- .col -->
+
+				<div class="col-sm-6 col-md-4">
+					<h3>Chalupa</h3>
+					<p>
+						Hrabětice<br>
+						Jizerské hory
+					</p>
+
+					<p><a href="mailto:chalupa@gmail.com">chalupa@gmail.com</a></p>
+
+					<p>Telefon:<br>+420 654 123 456</p>
+
+				</div><!-- .col -->
+
+				<div class="col-sm-12 col-md-4">
+					<iframe src="https://mapy.cz/turisticka?x=15.1895394&y=50.7813097&z=15&source=ward&id=14339" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div><!-- .col -->
+
+			</div><!-- row -->
+
+		</div><!-- .container -->
+
+	</div><!-- #kontakt -->
+
+
+
+
+	<!-- Paticka -->
+	<div class="paticka">
+		
+		<p>&copy;2016, Maki. <br class="visible-xs">Vyrobeno pro mého bratra.</p>
+			
+		<p class="photo-credits">
+			Private photos.
+		</p>
+	
+	</div>
+
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/mail.js"></script>
+
+</body>
+</html>
