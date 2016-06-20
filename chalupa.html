@@ -13,6 +13,10 @@
 
 	<!-- nase vlastni styly -->
 	<link href="css/style.css"  rel="stylesheet">
+	
+	<!-- javascript na mapu -->
+	<script src="//api.mapy.cz/loader.js"></script>
+	<script>Loader.load()</script>
 </head>
 <body data-spy="scroll" data-target="#menu" data-offset="100">
 	
@@ -69,7 +73,7 @@
 
 
 	<!-- Vybavení -->
-	<div id="vybaveni" class="sekce sekce-seda">
+	<div id="vybaveni" class="sekce sekce-hneda">
 
 		<div class="container">
 
@@ -79,7 +83,7 @@
 
 				<div class="col-sm-4">
 					<div class="vybaveni">
-						<img src="images/pictogram/kuchyn.jpg" alt="Kuchyn">
+						<img class="img-circle" src="images/pictogram/kuchyn.jpg" alt="Kuchyn">
 						<h3>Kuchyně</h3>
 						<p>Elektrický sporák, rychlovarná konvice, mikrovlnná trouba, myčka. Nádobí i náčinní v dostatečném počtu.</p>
 					</div>
@@ -87,7 +91,7 @@
 
 				<div class="col-sm-4">
 					<div class="vybaveni">
-						<img src="images/pictogram/koupelna.jpg" alt="Koupelna">
+						<img class="img-circle" src="images/pictogram/koupelna.jpg" alt="Koupelna">
 						<h3>Koupelna</h3>
 						<p>Sprchový kout, umyvadlo, jeden záchod v přízemí.</p>
 					</div>
@@ -95,9 +99,9 @@
 
 				<div class="col-sm-4">
 					<div class="vybaveni">
-						<img src="images/pictogram/pokoje.jpg" alt="Pokoje">
+						<img class="img-circle" src="images/pictogram/pokoje.jpg" alt="Pokoje">
 						<h3>Pokoje</h3>
-						<p>1 pokoj v přízemí, 2 pokoje v patře. V každém pokoji 3 plnohodnotná místa. Možnost dětské postýlky. Přistýlka možná 1 v každém pokoji (pokoj v přízemí přízemí rozkládací gauč, v pokojích v patře přistýlka pouze matrace na zemi).</p>
+						<p>1 pokoj v přízemí, 2 pokoje v patře. V každém pokoji 3 plnohodnotná místa. Možnost dětské postýlky. Přistýlka možná 1 v každém pokoji (pokoj v přízemí rozkládací gauč, v pokojích v patře přistýlka pouze formou matrace na zemi).</p>
 					</div>
 				</div>
 
@@ -110,7 +114,7 @@
 
 
 	<!-- Další sluzby -->
-	<div id="sluzby" class="sekce sekce-hneda">
+	<div id="sluzby" class="sekce sekce-seda">
 	
 		<div class="container">
 
@@ -198,7 +202,7 @@
 				<div class="col-sm-6 col-md-8">
 					
 					<form id="reservationform">
-						  <div class="alert alert-success hidden" id="sendresult-ok">Úspěšně odesláno, děkujeme</div>
+						  <div class="alert alert-success hidden" id="sendresult-ok">Úspěšně odesláno, děkujeme.</div>
 						  <div class="alert alert-danger hidden" id="sendresult-error">Došlo k neznámé chybě. Zkuste odeslání znovu.</div>
 						  <fieldset class="form-group">
 						    <label for="frommail">Vaše emailová adresa</label>
@@ -236,8 +240,9 @@
 
 				<div class="col-sm-6 col-md-4">
 					<h4>Orientační obsazenost</h4>
-
-					<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=300&amp;wkst=2&amp;hl=cs&amp;bgcolor=%23FFFFFF&amp;src=9ciiumq6du58hgs41728gkr728%40group.calendar.google.com&amp;color=%2328754E&amp;ctz=Europe%2FPrague" style="border-width:0" width="400" height="300" frameborder="0" scrolling="no"></iframe>
+						<div class="ramecek">	
+							<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=300&amp;wkst=2&amp;hl=cs&amp;bgcolor=%23FFFFFF&amp;src=9ciiumq6du58hgs41728gkr728%40group.calendar.google.com&amp;color=%2328754E&amp;ctz=Europe%2FPrague" style="border-width:0" width="400" height="300" frameborder="0" scrolling="no"></iframe>
+						</div><!-- ramecek -->
 				</div><!-- col -->
 
 			</div><!-- .row -->
@@ -280,10 +285,18 @@
 			<h2>Kontakt</h2>
 
 			<div class="row">
+				
+				<div class="col-sm-6 col-md-5">
+					<p>
+						Hrabětice<br>
+						Jizerské hory
+					</p>
 
-				<div class="col-sm-6 col-md-3">
+					<p><a href="mailto:chalupa@gmail.com">chalupa@gmail.com</a></p>
 
-					<h3>Kdy můžete přijet</h3>
+					<p>Telefon:<br>+420 654 123 456</p>
+
+					<h4>Kdy můžete přijet</h4>
 
 					<table class="table table-bordered oteviraci-doba">
 						<tbody>
@@ -308,21 +321,9 @@
 
 				</div><!-- .col -->
 
-				<div class="col-sm-6 col-md-3">
-					<h3>Chalupa</h3>
-					<p>
-						Hrabětice<br>
-						Jizerské hory
-					</p>
-
-					<p><a href="mailto:chalupa@gmail.com">chalupa@gmail.com</a></p>
-
-					<p>Telefon:<br>+420 654 123 456</p>
-
-				</div><!-- .col -->
-
-				<div class="col-sm-12 col-md-6">
-					<iframe src="https://mapy.cz/turisticka?x=15.1895394&y=50.7813097&z=15&source=ward&id=14339" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<div class="col-sm-12 col-md-7" id="mapa">
+					<!--iframe src="https://mapy.cz/turisticka?x=15.1895394&y=50.7813097&z=15&source=ward&id=14339" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe-->
+					
 				</div><!-- .col -->
 
 			</div><!-- row -->
@@ -337,7 +338,7 @@
 	<!-- Paticka -->
 	<div class="paticka">
 		
-		<p>&copy;2016, Maki. <br class="visible-xs">Vyrobeno pro mého bratra.</p>
+		<p>&copy;2016, Maki. Vyrobeno pro mého bratra.</p>
 			
 		<p class="photo-credits">
 			Private photos.

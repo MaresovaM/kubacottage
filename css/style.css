@@ -140,10 +140,10 @@ h4 {
 }
 
 .sekce-seda {
-    background-color: #f0f0f0;
+    background-color: #d6d1b1;
 }
 .sekce-hneda {
-    background-color: #eee8aa;
+    background-color: #F0b67f;
 }
 
 
@@ -207,15 +207,17 @@ h4 {
 
 /**** Rezervace ****/
 .rezervace {
-    background-color: #afeeee;
-    padding-right: 120px;
-    padding-left: 90px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-
+    background-color: #e8efc6;
 }
 
+.ramecek {
+    	width: 100%;
+		margin: auto;
+}
 
+iframe {
+    width: 100%;
+}
 
 /**** Fotogalerie ****/
 #fotogalerie {
@@ -280,11 +282,15 @@ h4 {
     margin: 0;
     padding: 0;
 }
+#mapa {
+    height: 400px;
+}
+
 
 /**** Paticka ****/
 .paticka {
     padding-left: 20px;
-    font-size: 15px;
+    font-size: 13px;
 }
 .photo-credits {
     font-size: 12px;

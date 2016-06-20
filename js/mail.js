@@ -1,4 +1,6 @@
 /* global $*/
+/* global SMap*/
+/* global JAK*/
 
 // TODO: Update mail to the real one.
 /** Main contact e-mail adderss */
@@ -48,3 +50,9 @@ $("#sendmail").click(function () {
 	    }
 	});
 });
+
+//vlozeni mapy
+var stred = SMap.Coords.fromWGS84(15.189, 50.7813);
+var mapa = new SMap(JAK.gel("mapa"), stred, 14);
+mapa.addDefaultLayer(SMap.DEF_BASE).enable();
+mapa.addDefaultControls();
