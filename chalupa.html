@@ -17,6 +17,10 @@
 	<!-- javascript na mapu -->
 	<script src="//api.mapy.cz/loader.js"></script>
 	<script>Loader.load()</script>
+	
+	<!-- fotogalerie -->
+	<link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+	<link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
 </head>
 <body data-spy="scroll" data-target="#menu" data-offset="100">
 	
@@ -31,7 +35,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">CHALUPA</a>
+				<a class="navbar-brand" href="#">ANDĚLSKÁ CHALUPA</a>
 		    </div><!-- navbar-header -->
 
 			<div id="menu" class="collapse navbar-collapse">
@@ -62,7 +66,7 @@
 							<h2>Pozor!</h2>
 						</div>
 						<div class="col-sm-6 col-md-8">
-							<p>Na snídani chodí místní kráva. Prosíme, nekrmit (obslouží se sama), nehladit, nesedlat a nejlépe s úctou VYPROVODIT.</p>
+							<p>Na snídani chodí místní koza, čas od času i kráva. Prosíme, nekrmit (obslouží se sama), nehladit, nesedlat a nejlépe s úctou VYPROVODIT.</p>
 						</div>
 					</div><!-- .row -->
 				</div><!-- .container -->
@@ -191,7 +195,7 @@
 
 
 	<!-- Rezervace -->
-	<div id="rezervace" class="rezervace">
+	<div id="rezervace" class="sekce rezervace">
 
 		<div class="container">
 
@@ -199,7 +203,7 @@
 
 			<div class="row">
 
-				<div class="col-sm-6 col-md-8">
+				<div class="col-sm-6 col-md-7">
 					
 					<form id="reservationform">
 						  <div class="alert alert-success hidden" id="sendresult-ok">Úspěšně odesláno, děkujeme.</div>
@@ -238,7 +242,7 @@
 					</form>
 				</div><!-- col -->
 
-				<div class="col-sm-6 col-md-4">
+				<div class="col-sm-6 col-md-4 col-md-offset-1">
 					<h4>Orientační obsazenost</h4>
 						<div class="ramecek">	
 							<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=300&amp;wkst=2&amp;hl=cs&amp;bgcolor=%23FFFFFF&amp;src=9ciiumq6du58hgs41728gkr728%40group.calendar.google.com&amp;color=%2328754E&amp;ctz=Europe%2FPrague" style="border-width:0" width="400" height="300" frameborder="0" scrolling="no"></iframe>
@@ -251,28 +255,106 @@
 
 	</div><!-- #rezervace -->
 
-	<!-- Fotogalerie -->
+	<!-- puvodni fotogalerie
 	<div id="fotogalerie" class="sekce">
 
 		<h2>Fotogalerie</h2>
 
-		<ul class="galerie clearfix">
-			<li><a href="images/galerieB/fotka1.jpg"><img src="images/galerieS/foto01.jpg" alt="foto 01"></a></li>
-			<li><img src="images/galerieS/foto02.jpg" alt="Foto 02"></li>
-			<li><img src="images/galerieS/foto03.jpg" alt="Foto 03"></li>
-			<li><img src="images/galerieS/foto04.jpg" alt="Foto 04"></li>
-			<li><img src="images/galerieS/foto05.jpg" alt="Foto 05"></li>
-			<li><img src="images/galerieS/foto06.jpg" alt="Foto 06"></li>
-			<li><img src="images/galerieS/foto07.jpg" alt="Foto 07"></li>
-			<li><img src="images/galerieS/foto08.jpg" alt="Foto 08"></li>
-			<li><img src="images/galerieS/foto09.jpg" alt="Foto 09"></li>
-			<li><img src="images/galerieS/foto10.jpg" alt="Foto 10"></li>
-			<li><img src="images/galerieS/foto11.jpg" alt="Foto 11"></li>
-			<li><img src="images/galerieS/foto12.jpg" alt="Foto 12"></li>
-		</ul>
+		<!-- <ul class="galerie clearfix">
+			<li><a href="images/galerie-b/fotka1.jpg"><img src="images/galerie-s/foto01.jpg" alt="foto 01"></a></li>
+			<li><img src="images/galerie-s/foto02.jpg" alt="Foto 02"></li>
+			<li><img src="images/galerie-s/foto03.jpg" alt="Foto 03"></li>
+			<li><img src="images/galerie-s/foto04.jpg" alt="Foto 04"></li>
+			<li><img src="images/galerie-s/foto05.jpg" alt="Foto 05"></li>
+			<li><img src="images/galerie-s/foto06.jpg" alt="Foto 06"></li>
+			<li><img src="images/galerie-s/foto07.jpg" alt="Foto 07"></li>
+			<li><img src="images/galerie-s/foto08.jpg" alt="Foto 08"></li>
+			<li><img src="images/galerie-s/foto09.jpg" alt="Foto 09"></li>
+			<li><img src="images/galerie-s/foto10.jpg" alt="Foto 10"></li>
+			<li><img src="images/galerie-s/foto11.jpg" alt="Foto 11"></li>
+			<li><img src="images/galerie-s/foto12.jpg" alt="Foto 12"></li>
+		</ul> -->
 		
+		<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+		<div id="blueimp-gallery" class="blueimp-gallery" data-use-bootstrap-modal="false">
+		    <!-- The container for the modal slides -->
+		    <div class="slides"></div>
+		    <!-- Controls for the borderless lightbox -->
+		    <h3 class="title"></h3>
+		    <a class="prev">‹</a>
+		    <a class="next">›</a>
+		    <a class="close">×</a>
+		    <a class="play-pause"></a>
+		    <ol class="indicator"></ol>
+		    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+		    <div class="modal fade">
+		        <div class="modal-dialog">
+		            <div class="modal-content">
+		                <div class="modal-header">
+		                    <button type="button" class="close" aria-hidden="true">&times;</button>
+		                    <h4 class="modal-title"></h4>
+		                </div>
+		                <div class="modal-body next"></div>
+		                <div class="modal-footer">
+		                    <button type="button" class="btn btn-default pull-left prev">
+		                        <i class="glyphicon glyphicon-chevron-left"></i>
+		                        Previous
+		                    </button>
+		                    <button type="button" class="btn btn-primary next">
+		                        Next
+		                        <i class="glyphicon glyphicon-chevron-right"></i>
+		                    </button>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</div>
 		
+			
 		
+		<div id="fotogalerie" class="sekce">
+			
+			<h2>Fotogalerie</h2>
+			
+			<ul class="galerie clearfix">
+			    <li><a href="images/galerie-b/fotka1.jpg" title="foto01" data-gallery>
+			        <img src="images/galerie-s/foto01.jpg" alt="fotka">
+			    </a></li>
+			    <li><a href="images/galerie-b/fotka2.jpg" title="foto02" data-gallery>
+			        <img src="images/galerie-s/foto02.jpg" alt="fotka">
+			    </a></li>
+			    <li><a href="images/galerie-b/fotka3.jpg" title="foto03" data-gallery>
+			        <img src="images/galerie-s/foto03.jpg" alt="fotka">
+			    </a></li>
+			    <li><a href="images/galerie-b/fotka4.jpg" title="foto04" data-gallery>
+			        <img src="images/galerie-s/foto04.jpg" alt="fotka">
+			    </a></li>
+			    <li><a href="images/galerie-b/fotka5.jpg" title="foto05" data-gallery>
+			        <img src="images/galerie-s/foto05.jpg" alt="fotka">
+			    </a></li>
+			    <li><a href="images/galerie-b/fotka6.jpg" title="foto06" data-gallery>
+			        <img src="images/galerie-s/foto06.jpg" alt="fotka">
+			    </a></li>
+			    <li><a href="images/galerie-b/fotka7.jpg" title="foto07" data-gallery>
+			        <img src="images/galerie-s/foto07.jpg" alt="fotka">
+			    </a></li>
+			    <li><a href="images/galerie-b/fotka8.jpg" title="foto08" data-gallery>
+			        <img src="images/galerie-s/foto08.jpg" alt="fotka">
+			    </a></li>
+			    <li><a href="images/galerie-b/fotka9.jpg" title="foto09" data-gallery>
+			        <img src="images/galerie-s/foto09.jpg" alt="fotka">
+			    </a></li>
+			    <li><a href="images/galerie-b/fotka10.jpg" title="foto10" data-gallery>
+			        <img src="images/galerie-s/foto10.jpg" alt="fotka">
+			    </a></li>
+			    <li><a href="images/galerie-b/fotka11.jpg" title="foto11" data-gallery>
+			        <img src="images/galerie-s/foto11.jpg" alt="fotka">
+			    </a></li>
+			    <li><a href="images/galerie-b/fotka12.jpg" title="foto12" data-gallery>
+			        <img src="images/galerie-s/foto12.jpg" alt="fotka">
+			    </a></li>
+		</div>
+				
 	</div><!-- #fotogalerie -->
 
 
@@ -286,19 +368,29 @@
 
 			<div class="row">
 				
-				<div class="col-sm-6 col-md-5">
+				<div class="col-sm-6 col-md-3">
 					<p>
 						Hrabětice<br>
 						Jizerské hory
 					</p>
 
-					<p><a href="mailto:chalupa@gmail.com">chalupa@gmail.com</a></p>
+					<p><a href="mailto:andelskachalupa@gmail.com">andelskachalupa@gmail.com</a></p>
 
 					<p>Telefon:<br>+420 654 123 456</p>
+					<br>
+					
+					<div class="kdy-prijet">
 
-					<h4>Kdy můžete přijet</h4>
+						<h5>Kdy můžete přijet</h5>
+							<p>Jaro: ano</p>
+							<p>Léto: určitě</p>
+							<p>Podzim: ano</p>
+							<p>Zima: dá-li Muhu</p>
+					</div>
+					
+					<!-- vypnuta tabulka -->
 
-					<table class="table table-bordered oteviraci-doba">
+					<!-- <table class="table table-bordered oteviraci-doba">
 						<tbody>
 							<tr>
 								<td>Jaro</td>
@@ -317,11 +409,11 @@
 								<td>dá-li Muhu</td>
 							</tr>
 						</tbody>
-					</table>
+					</table> -->
 
 				</div><!-- .col -->
 
-				<div class="col-sm-12 col-md-7" id="mapa">
+				<div class="col-sm-6 col-md-7 col-md-offset-2" id="mapa">
 					<!--iframe src="https://mapy.cz/turisticka?x=15.1895394&y=50.7813097&z=15&source=ward&id=14339" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe-->
 					
 				</div><!-- .col -->
@@ -354,6 +446,11 @@
     <script src="js/bootstrap.min.js"></script>
 
     <script src="js/mail.js"></script>
+    
+    <!-- fotogalerie -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+	<script src="js/bootstrap-image-gallery.min.js"></script>
 
 </body>
 </html>

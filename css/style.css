@@ -131,12 +131,18 @@ h4 {
     text-align: center;
 }
 
+h5 {
+    text-align: left;
+    font-size: 20px;
+    color: #8b0000;
+}
+
 
 
 /**** Sekce ****/
 .sekce {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .sekce-seda {
@@ -175,7 +181,7 @@ h4 {
 
 /**** Vybavení ****/
 .vybaveni {
-    margin-bottom: 45px;
+   /*margin-bottom: 45px;*/
     text-align: center;
 }
 
@@ -194,7 +200,7 @@ h4 {
 }
 
 .sluzba {
-    margin-bottom: 30px;
+   /* margin-bottom: 30px;*/
 }
 
 .sluzba img {
@@ -270,12 +276,16 @@ iframe {
 
 
 /**** Kontakt ****/
-#kontakt h3 {
-    margin-top: 0;
-}
 
 .oteviraci-doba td {
     background-color: #fff;
+}
+
+.kdy-prijet {
+    background-color:  #c9c4a3;
+    font-size: small;
+    padding: 5px;
+    font-style: italic;
 }
 
 .table table-bordered oteviraci-doba {
